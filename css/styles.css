@@ -283,11 +283,23 @@ a:hover {
   border-bottom: none;
 }
 
+.item-header {
+  margin-bottom: var(--space-1);
+}
+
 .item-title {
   font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 600;
-  margin: 0 0 var(--space-1) 0;
+  margin: 0;
+}
+
+.item-role {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .item-title a {
@@ -297,6 +309,15 @@ a:hover {
 
 .item-title a:hover {
   color: var(--color-accent);
+}
+
+.item-title a.external-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.item-title a.external-link:hover {
+  color: #a84d2f;
 }
 
 .item-meta {
@@ -310,6 +331,10 @@ a:hover {
   color: var(--color-text-secondary);
   margin: 0;
   line-height: 1.6;
+}
+
+.item-description + .item-description {
+  margin-top: var(--space-2);
 }
 
 /* ==========================================================================
@@ -358,6 +383,12 @@ a:hover {
   margin: 0;
 }
 
+.podcast-proverb {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
 /* ==========================================================================
    Contact CTA
    ========================================================================== */
@@ -371,6 +402,131 @@ a:hover {
 .contact-line a {
   color: var(--color-accent);
   font-weight: 500;
+}
+
+/* ==========================================================================
+   Essay List (Writing page)
+   ========================================================================== */
+
+.essay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.essay-list li {
+  padding: 0.375rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.essay-list li:last-child {
+  border-bottom: none;
+}
+
+.essay-list a {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: none;
+}
+
+.essay-list a:hover {
+  color: var(--color-accent);
+}
+
+.essay-placeholder {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* Essay page styles */
+.essay-question {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.essay-body p {
+  margin-bottom: var(--space-3);
+}
+
+.essay-body p:last-child {
+  margin-bottom: 0;
+}
+
+.essay-back {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.essay-back a {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.essay-back a:hover {
+  color: var(--color-accent);
+}
+
+/* Writing page sections */
+.writing-section {
+  margin-bottom: var(--space-6);
+}
+
+.writing-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--space-2) 0;
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.subsection-title {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin: var(--space-3) 0 var(--space-1) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.writing-section .essay-list {
+  margin-left: var(--space-2);
+}
+
+/* Writing category header */
+.writing-category {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--space-4) 0;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.section-placeholder {
+  color: var(--color-text-secondary);
+  padding: var(--space-1) 0;
+  line-height: 1.5;
+}
+
+.category-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--color-border);
+  margin: var(--space-5) 0;
 }
 
 /* ==========================================================================
