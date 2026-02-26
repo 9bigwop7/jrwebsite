@@ -5,7 +5,7 @@
   'use strict';
 
   // Configuration
-  const WORKER_URL = 'https://jacob-chat.jhrafiy.workers.dev';
+  const WORKER_URL = 'https://jacobrafiy-api-proxy.jhrafiy.workers.dev';
   const STORAGE_KEY = 'jacob-chat-messages';
 
   // State
