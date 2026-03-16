@@ -1,4 +1,4 @@
-name = "jacob-chat"
+name = "jacobrafiy-api-proxy"
 main = "chat-worker.js"
 compatibility_date = "2024-01-01"
 
