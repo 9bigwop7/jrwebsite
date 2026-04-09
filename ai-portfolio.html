@@ -35,9 +35,8 @@
               <h2 class="item-title">BIGWOP — Cognitive Training System</h2>
             </div>
             <p class="item-meta">April 2026</p>
-            <p class="item-description"><strong>Why:</strong> Every cognitive training app on the market is gamified junk or a shallow implementation of one technique. I wanted a serious, comprehensive training system built around cognitive science — something I could pull up in any moment and use to improve. So I built my own.</p>
-            <p class="item-description"><strong>How:</strong> Standalone PWA built with React + Vite, deployed on Cloudflare Workers with Supabase for cross-device sync. Five integrated training modules:</p>
-            <p class="item-description">Mental Arithmetic for raw computational speed. Dual N-Back for working memory and fluid intelligence training. Decision Training powered by Claude API (Haiku) — covering expected value, Bayesian reasoning, base rate neglect, combinatorics, and risk assessment on the probability side, and dominant strategies, prisoner's dilemma, signaling and commitment, BATNA negotiation, and asymmetric information on the game theory side. Each training game is available at beginner, intermediate, and advanced levels. Spaced Repetition to combat the Ebbinghaus forgetting curve through active recall, enabling long-term memory encoding. Decision Journal for tracking and analyzing real decisions over time to surface patterns in my own reasoning.</p>
+            <p class="item-description"><strong>Why:</strong> Every cognitive training app is either gamified junk or a shallow implementation of one technique. I wanted a serious, comprehensive training system built around cognitive science... So I built my own.</p>
+            <p class="item-description"><strong>How:</strong> Standalone PWA built with React + Vite, deployed on Cloudflare Workers with Supabase for cross-device sync. Five training modules: Mental Arithmetic for computational speed. Dual N-Back for working memory and fluid intelligence. Decision Training powered by Claude API (Haiku) for probability (EV, Bayes, base rates, combinatorics, risk assessment) and game theory (dominant strategies, prisoner's dilemma, signaling, BATNA, asymmetric information). Spaced Repetition to combat the Ebbinghaus forgetting curve through active recall. Decision Journal to track real decisions and surface patterns in reasoning over time.</p>
           </li>
 
           <li class="item">
@@ -46,7 +45,7 @@
             </div>
             <p class="item-meta">March 2026</p>
             <p class="item-description"><strong>Why:</strong> The AI landscape moves daily, and the signal-to-noise ratio on X and tech media is abysmal. I don't waste my time, and I am not going to spend 45 minutes scrolling X to find the three things that actually matter. So I built a system that does the filtering for me and delivers a curated briefing to my inbox every morning at 9 AM.</p>
-            <p class="item-description"><strong>How:</strong> A Cloudflare Worker runs on a daily cron schedule, pulling from 12 hand-selected RSS feeds spanning primary research labs (Anthropic, OpenAI, DeepMind, Google AI, xAI, Nvidia, Microsoft) and curated commentary (Simon Willison, Jack Clark's Import AI, Andrew Ng's The Batch, The Rundown AI). Raw entries are passed through the Claude API, which filters for genuine signal — new model releases, architectural breakthroughs, policy shifts, and actionable product updates — then compiles and formats a clean daily newsletter.</p>
+            <p class="item-description"><strong>How:</strong> A Cloudflare Worker runs on a daily cron schedule, pulling from 12 hand-selected RSS feeds spanning primary research labs (Anthropic, OpenAI, DeepMind, Google AI, xAI, Nvidia, Microsoft) and curated commentary (Simon Willison, Jack Clark's Import AI, Andrew Ng's The Batch, The Rundown AI). Raw entries pass through the Claude API, filtering for genuine signal: new model releases, architectural breakthroughs, policy shifts, and actionable product updates. Then, the result is compiled and formatted into a clean daily newsletter.</p>
           </li>
 
           <li class="item">
@@ -54,8 +53,8 @@
               <h2 class="item-title">Startup Sieve</h2>
             </div>
             <p class="item-meta">January 2026</p>
-            <p class="item-description"><strong>Why:</strong> I needed to evaluate hundreds of startups across top VC portfolios to identify the right opportunities — companies at the right stage, with the right founders, where I could learn the most. Doing this manually was slow and error-prone. So I built a system to do it programmatically.</p>
-            <p class="item-description"><strong>How:</strong> Built a multi-stage scraping and filtering pipeline using Claude Code. The system ingests portfolio data from firms including a16z, Sequoia, Founders Fund, Benchmark, Compound VC, and others — then applies a layered scoring model: stage and team size filters, founder quality signals (repeat founders, career trajectory, institutional pedigree), growth trajectory indicators (funding recency, hiring velocity, traction signals), and network value scoring (investor tier, co-investment patterns). The output is a tiered shortlist ranked by composite fit.</p>
+            <p class="item-description"><strong>Why:</strong> I decided to evaluate 1000+ startups across top VC portfolios to identify companies at the right stage, with the right founders, where I could learn the most. Doing this manually was slow and error-prone. So I built a system to do it programmatically.</p>
+            <p class="item-description"><strong>How:</strong> Built a multi-stage scraping and filtering pipeline using Claude Code. The system ingests portfolio data from firms including a16z, Sequoia, Founders Fund, Benchmark, Compound VC, and others. It then applies a layered scoring model: stage and team size filters, founder quality signals (repeat founders, career trajectory, institutional pedigree), growth trajectory indicators (funding recency, hiring velocity, traction signals), and network value scoring (investor tier, co-investment patterns). The output is a tiered shortlist ranked by composite fit.</p>
           </li>
 
           <li class="item">
